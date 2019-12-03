@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type"
     title SimpleExam
     = csrf_meta_tags
     = csp_meta_tag
@@ -9,7 +9,11 @@ html
     = javascript_pack_tag 'admin', 'data-turbolinks-track': 'reload'
   body
     = render 'admin/shared/main_menu'
-    .row
-      .container
+
+    .container
+      .row
         .col-md-12
+          ol.breadcrumb
+            = render_breadcrumbs tag: :li, separator: ""
+          = render_flash
           = yield
