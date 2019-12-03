@@ -95,6 +95,13 @@ GEM
       mini_mime (>= 0.1.3)
     cocoon (1.2.14)
     coderay (1.1.2)
+    coffee-rails (5.0.0)
+      coffee-script (>= 2.2.0)
+      railties (>= 5.2.0)
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
     colorize (0.8.1)
     concurrent-ruby (1.1.5)
     crass (1.0.5)
@@ -305,6 +312,8 @@ GEM
     timecop (0.9.1)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    uglifier (4.2.0)
+      execjs (>= 0.3.0, < 3)
     warden (1.2.8)
       rack (>= 2.0.6)
     webpacker (4.2.0)
@@ -331,6 +340,7 @@ DEPENDENCIES
   byebug
   carrierwave
   cocoon
+  coffee-rails
   database_cleaner
   devise
   draper
@@ -359,6 +369,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   state_machines-activerecord
   timecop
+  uglifier
   webpacker (~> 4.0)
 
 RUBY VERSION

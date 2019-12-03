@@ -10,6 +10,7 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5'
 gem 'webpacker', '~> 4.0'
 gem 'jbuilder', '~> 2.7'
+gem 'uglifier'
 
 gem 'jquery-rails'
 
@@ -21,6 +22,7 @@ gem 'font_awesome5_rails'
 
 gem 'slim-rails'
 gem 'cocoon'
+gem 'coffee-rails'
 
 gem 'best_in_place'
 

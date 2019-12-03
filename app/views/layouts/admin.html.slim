@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    title SimpleExam
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'admin', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'admin', 'data-turbolinks-track': 'reload'
+  body
+    = render 'admin/shared/main_menu'
+    .row
+      .container
+        .col-md-12
+          = yield

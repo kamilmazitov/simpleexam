@@ -1,0 +1,12 @@
+h3 Преподаватели
+
+= link_to 'Добавить преподавателя', new_admin_teacher_path, class: 'btn btn-success pull-right'
+
+table.table.table-striped
+  thead
+    th
+    th Имя
+    th Фамилия
+    th Описание
+  tbody
+    = render @teachers
