@@ -26,14 +26,14 @@ class Admin::TeachersController < Admin::BaseController
   end
 
   def edit
-    add_breadcrumb "Редактировать #{@teacher.first_name} #{@teacher.last_name}", [:edit, :admin, @teacher]
+    add_breadcrumb "Редактировать #{@teacher.decorate.full_name}", [:edit, :admin, @teacher]
   end
 
   def update
     if @teacher.update(teacher_params)
       redirect_to admin_teachers_path, notice: 'Преподаватель успешно изменен'
     else
-      add_breadcrumb "Редактировать #{@teacher.first_name} #{@teacher.last_name}", [:edit, :admin, @teacher]
+      add_breadcrumb "Редактировать #{@teacher.decorate.full_name}", [:edit, :admin, @teacher]
       flash.now[:alert] = 'Не удалось создать преподавателя'
       render :new
     end

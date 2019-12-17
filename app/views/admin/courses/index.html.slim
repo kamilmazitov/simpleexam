@@ -1,0 +1,14 @@
+h3 Курсы
+
+= link_to 'Добавить курс', new_admin_course_path, class: 'btn btn-success pull-right'
+
+table.table.table-striped
+  thead
+    th
+    th Название
+    th Преподаватель
+    th Предметы
+  tbody
+    = render @courses.decorate
+
+= paginate @courses, theme: 'twitter-bootstrap-3'
