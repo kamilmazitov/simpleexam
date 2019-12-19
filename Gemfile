@@ -8,10 +8,11 @@ gem 'rails', '~> 6.0.0'
 gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5'
-gem 'webpacker', '~> 4.0'
 gem 'jbuilder', '~> 2.7'
+gem 'uglifier'
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 
 gem 'simple_form'
 
@@ -21,6 +22,7 @@ gem 'font_awesome5_rails'
 
 gem 'slim-rails'
 gem 'cocoon'
+gem 'coffee-rails'
 
 gem 'best_in_place'
 
@@ -42,6 +44,8 @@ gem 'state_machines-activerecord'
 
 gem 'carrierwave'
 gem 'mini_magick'
+
+gem 'acts_as_list'
 
 
 group :development, :test do
